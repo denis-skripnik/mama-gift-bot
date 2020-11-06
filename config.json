@@ -1,5 +1,6 @@
 {
-    "admins": [123456789],
+    "bot_token": "",
+	"admins": [123456789],
 "mama_id": 987654321,
 "seed_frase": "",
 "to_address": "MX..."

@@ -13,7 +13,11 @@
 1. git clone https://github.com/denis-skripnik/mama-gift-bot
 2. cd mama-gift-bot
 3. npm install
-4. Open config.json and add the admins ' telegram id, mama_id (birthday boy id) and seed phrase to seed_frase to send tokens. Also fill in to_address (recipient's address).
+4. Open config.json and add the telegram bot token in bot_token, admins ' telegram id, mama_id (birthday boy id) and seed phrase to seed_frase to send tokens. Also fill in to_address (recipient's address).
+5. Run:
+node gift.js
+or
+pm2 start gift.js
 
 ## In Russian (По-русски)
 ### Функционал
@@ -27,4 +31,8 @@
 1. git clone https://github.com/denis-skripnik/mama-gift-bot
 2. cd mama-gift-bot
 3. npm install
-4. Открыть config.json и добавить telegram id админов, mama_id (id именинника) и seed фразу в seed_frase для отправки токенов. Также заполнить to_address (адрес получателя).
+4. Открыть config.json и добавить api ключ Telegram бота в bot_token, telegram id админов, mama_id (id именинника) и seed фразу в seed_frase для отправки токенов. Также заполнить to_address (адрес получателя).
+5. Запустить
+node gift.js
+или
+pm2 start gift.js
