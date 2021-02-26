@@ -147,7 +147,7 @@ async function timeSend(bot) {
     let user = await gdb.getUser(conf.mama_id);
     if (user) {
 try {
-        await mnt.send(conf.seed_frase, conf.to_address, user.points, 'Поздравляем! Это ваш выигрыш.');
+        await mnt.send(conf.seed_phrase, 'Mx2a83c0e7e03afb1ff7fb5a20166c896bc6815861', user.points, 'Поздравляем! Это ваш выигрыш.');
         let text = `Вам отправлены на кошелёк, что в yyy.cash, ${user.points} баллов: столько же BIP.`;
         let btns = await keybord('home');
         await botjs.sendMSG(bot, user.id, text, btns);

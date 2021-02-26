@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "cron": "^1.8.2",
+    "minter-js-sdk": "latest",
+    "minterjs-wallet": "latest",
+    "nedb": "^1.8.0",
+    "telebot": "^1.2.6"
+  }
+}

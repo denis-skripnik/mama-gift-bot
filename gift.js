@@ -1,6 +1,6 @@
 const conf = require('./config.json');
 const TeleBot = require('telebot');
-const bot = new TeleBot(conf.bot_token);
+const bot = new TeleBot(conf.api_key);
 bot.start();
 const CronJob = require('cron').CronJob;
 

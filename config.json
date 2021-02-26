@@ -1,7 +1,6 @@
 {
-    "bot_token": "",
-	"admins": [123456789],
-"mama_id": 987654321,
-"seed_frase": "",
-"to_address": "MX..."
+    "admins": [1, 2],
+"mama_id": 3,
+"api_key": "",
+"seed_phrase": ""
 }

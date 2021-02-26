@@ -4,8 +4,8 @@ const wallet = minterWallet.generateWallet();
 const wallet2 = minterWallet.walletFromMnemonic(frase);
 const wif = wallet2.getPrivateKeyString();
 const {Minter, TX_TYPE} = require("minter-js-sdk");
-const minter = new Minter({apiType: 'node', baseURL: 'https://api.minter.one/'});
-    const txParams = {
+const minter = new Minter({apiType: 'node', baseURL: 'https://api.minter.one/v2'});
+const txParams = {
         chainId: 1,
         type: TX_TYPE.SEND,
         data: {
@@ -14,10 +14,10 @@ const minter = new Minter({apiType: 'node', baseURL: 'https://api.minter.one/'})
             coin: 'BIP',    
         },
         gasCoin: 'BIP',
-        gasPrice: 1,
+        gasPrice: 5,
         payload: memo,
     };
-    const idTxParams = await Minter.replaceCoinSymbol(txParams);
+    const idTxParams = await minter.replaceCoinSymbol(txParams);
     console.log(idTxParams);    
     minter.postTx(idTxParams, {privateKey: wif})
         .then((txHash) => {
